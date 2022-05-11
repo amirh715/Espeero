@@ -15,4 +15,11 @@ For running the system, launch the Eureka server, the client service (BabyNamesC
 To measure the performance of the system under the mentioned load, the following steps has been taken:
 First, a single instance of the BabyNames service is launched, and the test is performed. The following pictures show the results:
 
+![Screenshot from 2022-05-11 20-24-48](https://user-images.githubusercontent.com/13187478/167910811-ec455f49-d08a-448c-bb3c-386901d5110d.png)
+![Screenshot from 2022-05-11 20-24-52](https://user-images.githubusercontent.com/13187478/167911009-e10446c9-74fb-4e55-9c1e-7d74259d949d.png)
+![Screenshot from 2022-05-11 20-27-18](https://user-images.githubusercontent.com/13187478/167911591-fac3d994-dba6-4c4b-8c08-cd2f3b99ab91.png)
+![Screenshot from 2022-05-11 20-27-20](https://user-images.githubusercontent.com/13187478/167911245-f9f30a54-84be-42a5-a343-0a39b826f387.png)
+
+
 As it can be seen, more than half of the requests fail with a single instance of the service running. To scale the system, a second instance of the service is launched along side the first. And according to the results, all requests have been load balanced and responded to.
+
